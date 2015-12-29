@@ -1,0 +1,165 @@
+// SASS
+
+//colors
+$bgcolor: #292441
+$purple: #763978
+$lightpurple: #a44ca7
+$footerpurple: #1f1b35
+$white: #fff
+
+
+body
+  background-color: $bgcolor
+  text-align: center
+  font-family: 'Libre Baskerville', serif
+.wrapper
+  width: 100%
+.top-sect
+  width: 100%
+  background-color: $purple
+  padding: 10px 6px 4px 6px
+
+  p
+    font-size: 16px
+    color: $white
+.headline
+  h3
+    color: $white
+    font-size: 20px
+    letter-spacing: .3em
+    line-height: 1.4em
+
+  ul
+    padding-left: 2px
+    width: 100%
+  li
+    list-style: none
+    display: inline
+    margin: 0 .5em
+  p, li
+    color: $lightpurple
+
+.cast
+  display: inline-block
+  margin: 0 5% 24px 5%
+  h2
+    color: $white
+    line-height: 1.4
+.main-title
+  max-width: 960px
+  margin: 26px auto
+  padding: 10px
+  border-top: 1px solid $lightpurple
+  border-bottom: 1px solid $lightpurple
+.title
+  color: $white
+  small
+    color: $white
+  h1
+    font-size: 64px
+    margin-bottom: 26px
+  small.anchor
+    position: relative
+    width: 0px
+    height: 0px
+    .tail
+      position: absolute
+      font-size: 8px
+      width: 68px
+      left: -72px
+      top: 48px
+.cast2
+  p
+    color: $lightpurple
+  h3
+    font-size: 18px
+    color: $white
+    line-height: .4px
+  img
+    margin: 30px auto 30px auto
+
+.video
+  display: inline-block
+  background-color: $purple
+  margin: 10px 16px
+  h2
+    color: $white
+    font-size: 18px
+    line-height: .5
+.price
+  color: $white
+  background-color: $purple
+  max-width: 960px
+  margin: 30px auto 56px auto
+  min-height: 290px
+  padding: 22px
+  border: 22px solid $purple
+  box-shadow: 0 0 0 2px $bgcolor inset
+  h2
+    line-height: 1.5
+  p
+    font-size: 18px
+  button
+    color: $purple
+    background-color: $bgcolor
+    border: none
+    height: 50px
+    max-width: 320px
+    width: 90%
+    margin: 10px auto 20px auto
+.credit
+  p
+    color: $lightpurple
+    font-size: 16px
+footer
+  margin-top: 20px
+  padding: 5px
+  padding-bottom: 10px
+  background-color: $footerpurple
+  p
+    color: $white
+  a
+    text-decoration: underline
+    color: $lightpurple
+  .facebook:before
+    content: ' '
+    display: inline-block
+    width: 28px
+    height: 28px
+    background: url('../image/social_icon.jpg') -10px 6px
+  .twitter:before
+    content: ' '
+    display: inline-block
+    width: 28px
+    height: 28px
+    background: url('../image/social_icon.jpg') -38px 6px
+
+  .youtube:before
+    content: ' '
+    display: inline-block
+    width: 28px
+    height: 28px
+    background: url('../image/social_icon.jpg') -66px 6px
+
+@media (max-width : 460px)
+  .video, .cast
+    img
+      width: 100%
+  .headline
+    img
+      width: 40%
+  .price
+    h2
+      font-size: 1.5em
+@media (max-width : 320px)
+  .top-sect p
+    padding: 0 2px
+  .headline
+    li
+      font-size: 12px
+  .cast
+    margin: 0 1% 34px 1%
+  .video
+    margin: 10px 0
+    h2
+      font-size: 14px
